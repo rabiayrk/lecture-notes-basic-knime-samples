@@ -1,7 +1,18 @@
-# basic-machine-learning-algoritms-sample-with-knime
+# Lecture notes: basic machine learning with KNIME
 
-You can find datasets that are used in Knime workflows, inside of each folder. And also if you want to try different datasets, simply you can go and download from this website:
-https://finance.yahoo.com/quote/TSLA/history?p=TSLA
+KNIME workflows that compare basic machine learning algorithms on small datasets. Each folder has the workflow (`.knwf`) and the dataset it uses.
 
-Her klasörün içerisinde, Knime üzerinde kullanılan veri setleri bulunmaktadır. Ayrıca farklı veri setlerini denemek isterseniz, aşağıdaki websitesi üzerinden indirebilirsiniz: 
-https://finance.yahoo.com/quote/TSLA/history?p=TSLA
+| Folder | Workflows | Dataset |
+|---|---|---|
+| Classification | Decision tree, KNN, logistic regression, naive Bayes, random forest, SVM | Iris |
+| Clustering | k-means vs hierarchical clustering | Iris |
+| Dimensionality Reduction | PCA followed by KNN | Iris |
+| Regression | Linear, polynomial, decision tree, random forest | TSLA daily prices |
+
+## Open a workflow
+
+In KNIME Analytics Platform: File > Import KNIME Workflow, then select a `.knwf` file. The CSV file next to it is the input.
+
+The TSLA price data came from Yahoo Finance in 2020. To try newer data, download it again from finance.yahoo.com and replace the CSV.
+
+Written in 2020.
